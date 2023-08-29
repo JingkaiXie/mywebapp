@@ -1,7 +1,7 @@
-# Source code for Jingkai's personal site
+# About
 This web app uses python for the backend service, and html, css, javascript for the frontend.
 
-## Steps to run:
+## Development:
 - Install python 3+
 - Clone this repo: `git clone git@github.com:JingkaiXie/mywebapp.git`
 - Go to project directory: `cd mywebapp`
