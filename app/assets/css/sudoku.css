@@ -1,9 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f2f2f2;
-}
-
 .sudoku-board {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -23,8 +17,12 @@ body {
     cursor: pointer;
 }
 
-.sudoku-cell.user-input {
+.sudoku-cell.initial-value {
     background-color: #f2f2f2;
+}
+
+.sudoku-cell.user-input {
+    background-color: #ffffff;
 }
 
 .sudoku-cell.solved {

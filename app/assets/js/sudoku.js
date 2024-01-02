@@ -14,8 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
         [0, 0, 0, 0, 8, 0, 0, 7, 9]
     ];
 
-    // Create the Sudoku board
-    function createSudokuBoard() {
+    // Create the Sudoku board on page load
+    createSudokuBoard(sudokuData);
+
+    // Function to create the Sudoku board
+    function createSudokuBoard(sudokuData) {
         for (let row = 0; row < 9; row++) {
             for (let col = 0; col < 9; col++) {
                 const cell = document.createElement("div");
@@ -24,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Set initial values
                 if (sudokuData[row][col] !== 0) {
                     cell.textContent = sudokuData[row][col];
-                    cell.classList.add("user-input");
+                    cell.classList.add("initial-value");
                     cell.setAttribute("contenteditable", "false");
                 } else {
                     cell.setAttribute("contenteditable", "true");
@@ -34,9 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-
-    // Create the Sudoku board on page load
-    createSudokuBoard();
 
     // Handle user input
     board.addEventListener("input", function (event) {

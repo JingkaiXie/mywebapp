@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudoku Game</title>
-    <link rel="stylesheet" href="../assets/css/sudoku.css">
-</head>
-<body>
-    <div class="sudoku-board" id="sudoku-board">
-        <!-- Sudoku cells will be generated dynamically with JavaScript -->
-    </div>
+{% extends "base.html" %}
 
-    <script src="../assets/js/sudoku.js"></script>
-</body>
-</html>
+{% block additional_css %}
+<link rel="stylesheet" href="../assets/css/sudoku.css">
+{% endblock %}
+
+{% block content %}
+<div class="sudoku-board" id="sudoku-board">
+    <!-- Sudoku cells will be generated dynamically with JavaScript -->
+</div>
+{% endblock %}
+
+{% block additional_js %}
+<script src="../assets/js/sudoku.js"></script>
+{% endblock %}
