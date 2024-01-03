@@ -1,6 +1,5 @@
 # About
 This web app uses python for the backend service, and html, css, javascript for the frontend.
-
 ## Local Development:
 - Install python 3+
 - Clone this repo: `git clone git@github.com:JingkaiXie/mywebapp.git`
