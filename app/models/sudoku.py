@@ -54,7 +54,7 @@ class Sudoku:
 
         return True
 
-    def shuffle(self):
+    def shuffle(self) -> list[list[int]]:
         new_board = copy.deepcopy(self.board)
 
         def swap_rows(new_grid, subgrid):
@@ -73,7 +73,7 @@ class Sudoku:
 
         return new_board
 
-    def remove_cells(self, board, count):
+    def remove_cells(self, board, count) -> list[list[int]]:
         removed = 0
         while removed < count:
             row = random.randint(0, 8)
@@ -81,7 +81,7 @@ class Sudoku:
 
             # If the cell is not already empty, remove the number
             if board[row][col] != 0:
-                board[row][col] = 0  # Set the cell to 0 (or any placeholder for empty)
+                board[row][col] = 0  # 0 is used for empty cells in frontend javascript.
                 removed += 1
 
         return board
