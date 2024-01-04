@@ -11,7 +11,7 @@ The live version of this site is running on AWS EC2, with load balancers routing
 - The site will be available at:  http://127.0.0.1:8080
 
 ## TODO:
-- CD/CD integration for deployment on main branch.
+- CI/CD integration for deployment on main branch.
 - Integrate database support with Amazon Relational Database Service.
 - Implement user authentication with OpenID connect.
 - Persist user profile and sudoku game stats they solved to database.
