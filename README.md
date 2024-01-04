@@ -6,4 +6,4 @@ This web app uses python for the backend service, and html, css, javascript for 
 - Go to project directory: `cd mywebapp`
 - Install dependencies: `pip install -r requirements.txt`
 - Run the app: `python3 run.py`
-- The site will be available at:  http://127.0.0.1:5000
+- The site will be available at:  http://127.0.0.1:8080
